@@ -1,7 +1,7 @@
 #include <Wire.h>
 #include <MAX30105.h>
 
-MAX30105.h heartRateDetector;
+MAX30105 heartRateDetector;
 
 void setup() {
   Serial.begin(115200);
