@@ -43,5 +43,4 @@ void setup() {
 
 void loop() {
   Serial.println(heartRateDetector.getIR());
-
 }
