@@ -2,7 +2,7 @@ import serial
 import matplotlib.pyplot as plt
 from collections import deque
 
-ser = serial.Serial('COM3', 9600)  # need to update this when max30102 comes in
+ser = serial.Serial('COM3', 9600)  # FIX THIS VALUE when max30102 comes in
 
 window_size = 100  # Number of data points to show
 IR_data = deque([0]*window_size)
@@ -20,7 +20,7 @@ ax.set_xlim(0, window_size)
 plt.ion()
 
 while True:
-    new_data = int(ser.readline().strip()) # new IR value
+    new_data = int(ser.readline().strip()) # new BPM value
     IR_data.append(new_data)
     if len(IR_data) > window_size: 
         IR_data.popleft()
