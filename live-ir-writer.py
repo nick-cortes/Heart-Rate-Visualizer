@@ -4,7 +4,8 @@ from collections import deque
 
 min_height = 0
 min_distance = 25
-WINDOW_SIZE = 100
+WINDOW_SIZE = 300
+MIN_PEAK_PROMINENCE = 500
 
 ir_data = deque([0] * WINDOW_SIZE)
 
@@ -28,7 +29,7 @@ with open("detrended_ir_data.csv") as file:
         if (len(ir_data) > WINDOW_SIZE):
             ir_data.popleft()
 
-        peak_indices, properties = find_peaks(ir_data, distance=min_distance)
+        peak_indices, properties = find_peaks(ir_data, distance=min_distance, prominence=MIN_PEAK_PROMINENCE)
         if len(peak_indices) > 0:
             peak_amplitudes = []
             for index in peak_indices:
@@ -38,6 +39,9 @@ with open("detrended_ir_data.csv") as file:
         
         graph.set_ydata(ir_data)
         peaks_plot.set_data(peak_indices, peak_amplitudes)
-        
+
         plt.draw()
         plt.pause(0.001)
+
+plt.ioff()
+plt.show()

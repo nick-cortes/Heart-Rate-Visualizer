@@ -1,3 +1,7 @@
+"""
+Takes in live IR data from the MAX30102 and writes it to detrended_ir_data.csv.
+Mainly used to have a consistent graph with which to tune peak detection.
+"""
 import serial
 import matplotlib.pyplot as plt
 from collections import deque
