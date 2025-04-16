@@ -53,22 +53,7 @@ void loop() {
   long irAvg = irTotal / WINDOW_SIZE;
 
   long detrended = irValue - irAvg;
+  Serial.print(millis());
+  Serial.print(",");
   Serial.println(detrended);
-  if (detrended > 200 && (millis() - lastBeat > waitTime)) {
-    long delta = millis() - lastBeat;
-    lastBeat = millis();
-    // Serial.print(irValue);
-    // Serial.print(",");
-    // Serial.println("beat detected");
-
-    float beatsPerMinute = 60.0 / (delta / 1000.0);
-    bpmSum -= rates[rateSpot];
-    rates[rateSpot] = beatsPerMinute;
-    bpmSum += beatsPerMinute;
-    rateSpot = (rateSpot + 1) % RATE_SIZE;
-
-    float bpmAvg = bpmSum / RATE_SIZE;
-    // Serial.println(bpmAvg);
-  }
-
 }
