@@ -5,8 +5,8 @@ import serial
 import time
 
 min_distance = 25
-WINDOW_SIZE = 300
-MIN_PEAK_PROMINENCE = 275
+WINDOW_SIZE = 250
+MIN_PEAK_PROMINENCE = 225
 UPDATE_INTERVAL = 0.05
 
 ser = serial.Serial('COM3', 115200)

@@ -1,8 +1,3 @@
-peak_indices, properties = find_peaks(ir_data, distance=min_distance, prominence=MIN_PEAK_PROMINENCE)
+peak_indices, properties = find_peaks(ir_data_np, distance=min_distance)
 
-        peak_times = []
-        for index in peak_indices:
-            peak_times.append(times_deque[index])
-        peak_amplitudes = []
-        for index in peak_indices:
-                peak_amplitudes.append(ir_data[index])
+peak_amplitudes = ir_data_np[peak_indices]
