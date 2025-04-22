@@ -4,14 +4,14 @@ A Python-based heart rate monitoring and visualization tool using Arduino and th
 
 Designed to improve accuracy and provide clear visual feedback of heart rate data in real-time.
 
-## Features
+## 🚀 Features
 - Real-time heart rate monitoring via MAX30102 and Arduino
 - Custom beat detection algorithm with moving average filter
 - Data visualization with Matplotlib
 - Readings within 1% of commercial devices (Garmin, Apple)
   
 
-## Device Demo
+## 📸 Demo
 
 <img src="assets/hr-data-4.png" height="400"/>
 
@@ -25,7 +25,7 @@ Designed to improve accuracy and provide clear visual feedback of heart rate dat
 
   
 
-## Setup Instructions
+## 🔧 Setup Instructions
 ### Hardware
 1. Connect the MAX30102 sensor to the Arduino
 2. Upload `bpm-reader.ino` to the Arduino board via the Arduino IDE
@@ -46,7 +46,7 @@ pip install pyserial
 python bpm-plotter.py
 ```
 
-## Credits
+## 🤝 Credits
 
-Made by Nicholes Cortes (@nick-cortes).
+Made by Nicholes Cortes (@nick-cortes).  
 For a detailed documentation of the build process, [see my porfolio](https://nick-cortes.github.io/portfolio.html).
