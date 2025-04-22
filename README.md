@@ -12,10 +12,10 @@ Designed to improve accuracy and provide clear visual feedback of heart rate dat
   
 
 ## Device Demo
-![image](assets/hr-data-4.png)
+<img src="assets/hr-data-4.png" height="400"/>
 - BPM displayed Live
 - Console logs each detected beat
-![image](assets/device-img-1.jpeg)
+<img src="assets/device-img-1.jpeg" height="400"/>
 - MAX30102 + Arduino setup
 - Note: Finger is placed on the shining red light
 
