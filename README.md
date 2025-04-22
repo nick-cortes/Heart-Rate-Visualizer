@@ -11,7 +11,13 @@ Designed to improve accuracy and provide clear visual feedback of heart rate dat
 - Readings within 1% of commercial devices (Garmin, Apple)
   
 
-## Device
+## Device Demo
+![image](assets/hr-data-4.png)
+- BPM displayed Live
+- Console logs each detected beat
+![image](assets/device-img-1.jpeg)
+- MAX30102 + Arduino setup
+- Note: Finger is placed on the shining red light
 
   
 
@@ -38,5 +44,5 @@ python bpm-plotter.py
 
 ## Credits
 
-Made by Nicholes Cortes (@nick-cortes)
+Made by Nicholes Cortes (@nick-cortes).
 For a detailed documentation of the build process, [see my porfolio](https://nick-cortes.github.io/portfolio.html).
